@@ -75,11 +75,11 @@ services:
       timeout: 10s
       retries: 3
 
-  volumes:
+volumes:
     db_data:
     minio_data:
   
-  networks:
+networks:
     mlflow_frontend:
       driver: bridge
     mlflow_backend:
